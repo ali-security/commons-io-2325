@@ -47,7 +47,7 @@ jobs:
       run: mvn -V --file pom.xml --no-transfer-progress -DtrimStackTrace=false -Drat.skip=true
     - name: Upload Maven build artifacts
       if: success()
-      uses: ali-security/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: built-jars
         path: target/*.jar
