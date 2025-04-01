@@ -35,4 +35,4 @@ matrix:
 
 # --no-transfer-progress requires Maven 3.6.1+. Otherwise use --batch-mode
 script:
-  - mvn -V --no-transfer-progress  -Drat.skip=true
+  - mvn -V --no-transfer-progress -Drat.skip=true
