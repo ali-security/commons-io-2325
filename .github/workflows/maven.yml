@@ -49,6 +49,5 @@ jobs:
       if: success()
       uses: ali-security/upload-artifact@v3
       with:
-        name: commons-io-${{ matrix.os }}-jdk${{ matrix.java }}
-        path: |
-          target/*.jar
+        name: built-jars
+        path: target/*.jar
